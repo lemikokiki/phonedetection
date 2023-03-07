@@ -4,15 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>BIDC Phone-Detection</title>
+    <title>Phone-Detection</title>
+
 </head>
-<body>
-    <div>
-        <p>Index</p>
-        <button>
-            <a href="#" class="download" style="text-decoration: none;">Download BIDC App</a>
+<body onload="myFunction()" style="margin: 0;">
+
+    <div id="loader"></div>
+
+    <div id="mainDiv"> 
+        <div>
+            <h3>New Year 2023 International Inward Fee Promotion</h3>
+            <img src="./ipd-promotion.jpg" style="width: 100%; height: 100;">
+            <p>From now until June 30, 2023, enjoy the lowest remittance fee for International Inward Transfers through BIDC Bank's SWIFT as low as 0.01%</p>
+            <p>All associated terms and conditions apply.</p>
+            <p>Find the BIDC Bank branch nearest you right now!</p>
+        </div>
+        <button style="border-radius: 10%; background-color: cornflowerblue; margin: 10px;">
+            <a href="#" class="download" style="text-decoration: none;">BIDC App</a>
         </button>
     </div>
+
+
     <script src="./main.js"></script>
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 1000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("mainDiv").style.display = "block";
+        }
+    </script>
 </body>
 </html>
