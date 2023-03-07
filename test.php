@@ -1,8 +1,6 @@
 <?php
 $user_agent = $_SERVER['HTTP_USER_AGENT'];
-
 if (strpos($user_agent, 'iPhone') !== false) {
-    // IOS ok
     $url='https://apps.apple.com/kh/app/bidc-mobile-banking-cambodia/id1056453667';
     header('Location: '.$url);
 } elseif (strpos($user_agent, 'Android') !== false) {
