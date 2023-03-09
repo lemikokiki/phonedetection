@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Phone-Detection</title>
-
 </head>
-<body onload="myFunction()">
 
+<body onload="myFunction()">
     <div id="mainDiv" style="display: none;"> 
         <div>
             <h3>New Year 2023 International Inward Fee Promotion</h3>
@@ -46,15 +45,11 @@
 
     <script>
         var myVar;
-        
         function myFunction() {
-          myVar = setTimeout(showPage, 1000);
+          myVar = setTimeout(showPage, 3000);
         }
         
         function showPage() {
-        //   document.getElementById("loading-area").style.display = "none";
-        //   document.getElementById("mainDiv").style.display = "block";
-
             document.getElementById('loading-section').style.display="none"
             document.getElementById('mainDiv').style.display="block"
         }

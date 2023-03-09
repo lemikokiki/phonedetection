@@ -169,7 +169,7 @@ section{
   align-items: center;
   flex-direction: column;
   background: #001300;
-  animation: changeColor 2s linear infinite;
+  animation: changeColor 5s linear infinite;
 }
 
 @keyframes changeColor {
