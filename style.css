@@ -176,6 +176,9 @@ section{
   0%{
     filter: hue-rotate(0deg);
   }
+  50%{
+    filter: hue-rotate(-360deg);
+  }
   100%{
     filter: hue-rotate(360deg);
   }
@@ -193,12 +196,11 @@ section .loader {
   display: flex;
 }
 
-
 section .loader .dot{
   position: relative;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background: #00ff0a;
   box-shadow: 0 0 10px #00ff0a,
               0 0 20px #00ff0a,
